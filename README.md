@@ -25,6 +25,14 @@ my-app/
         game.json
         game2.json
 
+## Live Game Example
+https://react-sudoku-jono.herokuapp.com/
+
+## Styles
+This app was developed mobile first.
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

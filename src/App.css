@@ -105,9 +105,12 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .game-info {
+  justify-content: center;
+  display: flex;
   margin-left: 20px;
 }
 
@@ -116,8 +119,8 @@ ol, ul {
   border-collapse: collapse;
   background-color:  #FFFFFF;
   border:  #669 solid 2px;
-  margin-left: 12px;
-  margin-right: 4px;
+  /* margin-left: 12px;
+  margin-right: 4px; */
 }
 
 .game-board > div {
@@ -131,4 +134,36 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+
+
+@media (min-width: 500px){
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  .game-info {
+    margin-left: 20px;
+  }
+  
+  .game-board {
+    border-block-color:  black;
+    border-collapse: collapse;
+    background-color:  #FFFFFF;
+    border:  #669 solid 2px;
+    margin-left: 12px;
+    margin-right: 4px;
+  }
+
 }

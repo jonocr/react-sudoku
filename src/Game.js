@@ -115,6 +115,16 @@ class Game extends React.Component {
     const squares = this.state.squares;
     const movesLeft = this.state.movesLeft;
     return (
+      <div>
+        <div className="game-info">
+          <div>{(movesLeft == 0) ?
+            "You Won!!!" :
+            ""
+            }
+          </div>
+          <ol>{/*-- --*/}</ol>
+        </div>
+        
       <div className="game">
         <div className="game-board">          
         {this.state.loading ? 
@@ -125,14 +135,7 @@ class Game extends React.Component {
           />)
         }  
         </div>
-        <div className="game-info">
-          <div>{(movesLeft == 0) ?
-            "You Won!!!" :
-            ""
-            }
-          </div>
-          <ol>{/*-- --*/}</ol>
-        </div>
+      </div>
       </div>
     );
   }
